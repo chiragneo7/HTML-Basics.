@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .iframe-container {
+                display: flex;
+                gap: 20px;
+            }
+            .iframe-group {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            iframe {
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="iframe-container">
+            <div class="iframe-group">
+                <iframe style="border: 1px solid black;"
+                        width="600" height="800" name="iframe_target" title="iframe example"></iframe>
+                <p>
+                    <a href="https://en.wikipedia.org/wiki/Circle" target="iframe_target">Circle</a>
+                </p>
+            </div>
+            <div class="iframe-group">
+                <iframe style="border: 1px solid grey;"
+                        width="600" height="800" name="2iframe_target" title="2iframe example"></iframe>
+                <p>
+                    <a href="https://en.wikipedia.org/wiki/Square" target="2iframe_target">Square</a>
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
